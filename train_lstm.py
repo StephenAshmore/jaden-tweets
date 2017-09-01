@@ -67,6 +67,7 @@ def sample(preds, temperature=1.0):
     probas = np.random.multinomial(1, preds, 1)
     return np.argmax(probas)
 
+
 # train the model, output generated text after each iteration
 for iteration in range(1, 60):
     print()
