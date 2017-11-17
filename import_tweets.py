@@ -7,10 +7,10 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 #Twitter API credentials
-consumer_key='mF3lkvUjvfoDcUrpg9tQpG9PD'
-consumer_secret='R1J31igqsThRQqIHsb646mufOMXbBXbEg9w9webUi1gj62MP7N'
-access_token_key='2390466710-yCRTiaz2HZR7KorS7ZkydtezrGj4yfjplLIGznv'
-access_token_secret='mK83i2cbAyhkm6yyAb3LRRf1ewpHuFLWp9Z0iix5RmpWX'
+consumer_key=''
+consumer_secret=''
+access_token_key=''
+access_token_secret=''
 
 screen_name = 'officialjaden'
 
