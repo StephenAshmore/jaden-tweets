@@ -47,15 +47,15 @@ for i, sentence in enumerate(sentences):
 
 # build the model: a single LSTM
 print('Build model...')
-# model = Sequential()
-# model.add(LSTM(128, input_shape=(maxlen, len(chars))))
-# model.add(Dense(len(chars)))
-# model.add(Activation('softmax'))
-#
-# optimizer = RMSprop(lr=0.01)
-# model.compile(loss='categorical_crossentropy', optimizer=optimizer)
+model = Sequential()
+model.add(LSTM(256, input_shape=(maxlen, len(chars))))
+model.add(Dense(len(chars)))
+model.add(Activation('softmax'))
 
-model = load_model('cleaned_model.h5')
+optimizer = RMSprop(lr=0.01)
+model.compile(loss='categorical_crossentropy', optimizer=optimizer)
+
+# model = load_model('cleaned_model.h5')
 
 
 def sample(preds, temperature=1.0):
